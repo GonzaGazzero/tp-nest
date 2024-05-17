@@ -1,0 +1,58 @@
+1-Crear un Producto:✅
+Método: POST
+Endpoint: /products
+Descripción: Crea un nuevo producto en la base de datos.
+Body de la solicitud: JSON con los detalles del tipo de producto
+Respuesta exitosa: Código 201 (Creado) y el JSON del tipo de producto creado, incluyendo su ID asignado.
+Respuesta de error: Código 400 (Solicitud incorrecta) si el cuerpo de la solicitud está mal formado o faltan campos obligatorios.
+
+2-Crear un Tipo de Producto:
+Método: POST
+Endpoint: /products-type
+Descripción: Crea un nuevo producto en la base de datos.
+Body de la solicitud: JSON con los detalles del tipo de producto
+Respuesta exitosa: Código 201 (Creado) y el JSON del tipo de producto creado, incluyendo su ID asignado.
+Respuesta de error: Código 400 (Solicitud incorrecta) si el cuerpo de la solicitud está mal formado o faltan campos obligatorios.
+
+3-Obtener un Producto:✅
+Método: GET
+Endpoint: /products/{id}
+Descripción: Obtiene los detalles de un producto específico según su ID.
+Respuesta exitosa: Código 200 (Éxito) 
+Respuesta de error: Código 404 (No encontrado).
+
+4-Obtener un Tipo de Producto:
+Método: GET
+Endpoint: /product-types/{id}
+Descripción: Obtiene los detalles de un tipo de producto específico según su ID.
+Respuesta exitosa: Código 200 (Éxito) 
+Respuesta de error: Código 404 (No encontrado) 
+
+5-Actualizar un de Producto:✅
+Método: PUT
+Endpoint: /products/{id}
+Descripción: Actualiza los detalles de un producto existente según su ID.
+Body de la solicitud: JSON con los nuevos detalles del producto a actualizar.
+Respuesta exitosa: Código 200 (Éxito) y el JSON actualizado del tipo de producto.
+Respuesta de error: Código 404 (No encontrado) 
+
+6-Actualizar un Tipo de Producto:
+Método: PUT
+Endpoint: /product-types/{id}
+Descripción: Actualiza los detalles de un tipo de producto existente según su ID.
+Body de la solicitud: JSON con los nuevos detalles del tipo de producto a actualizar.
+Respuesta exitosa: Código 200 (Éxito) y el JSON actualizado del tipo de producto.
+Respuesta de error: Código 404 (No encontrado) si el tipo de producto no existe, o código 400 (Solicitud incorrecta) si el cuerpo de la solicitud está mal formado.
+
+7-Obtener todos los Productos:✅
+Método: GET
+Endpoint: /products
+Descripción: Obtiene los detalles de un todos los productos
+Respuesta exitosa: Código 200 (Éxito) 
+
+8-Obtener todos los Tipos de Productos:
+Método: GET
+Endpoint: /product-types
+Descripción: Obtiene los detalles de un todos los tipos de productos
+Respuesta exitosa: Código 200 (Éxito) 
+
