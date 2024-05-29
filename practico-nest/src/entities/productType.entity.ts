@@ -1,8 +1,8 @@
-import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
+import { Column, Entity, OneToMany, PrimaryGeneratedColumn, BaseEntity } from 'typeorm';
 import { ProductEntity } from './product.entity';
 
 @Entity('productTypes') //trata a la clase como una entidad
-export class ProductTypeEntity {
+export class ProductTypeEntity extends BaseEntity {
   @PrimaryGeneratedColumn()
   id: number;
   @Column()

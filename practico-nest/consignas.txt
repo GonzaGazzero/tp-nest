@@ -1,3 +1,7 @@
+FALTA ESTO:
+A-Actualizar entidades de prueba
+B-Se deben crear al menos 4 tipos de productos y al menos 20 productos asociados.
+
 1-Crear un Producto:✅
 Método: POST
 Endpoint: /products
@@ -6,7 +10,7 @@ Body de la solicitud: JSON con los detalles del tipo de producto
 Respuesta exitosa: Código 201 (Creado) y el JSON del tipo de producto creado, incluyendo su ID asignado.
 Respuesta de error: Código 400 (Solicitud incorrecta) si el cuerpo de la solicitud está mal formado o faltan campos obligatorios.
 
-2-Crear un Tipo de Producto:
+2-Crear un Tipo de Producto:✅
 Método: POST
 Endpoint: /products-type
 Descripción: Crea un nuevo producto en la base de datos.
@@ -21,7 +25,7 @@ Descripción: Obtiene los detalles de un producto específico según su ID.
 Respuesta exitosa: Código 200 (Éxito) 
 Respuesta de error: Código 404 (No encontrado).
 
-4-Obtener un Tipo de Producto:
+4-Obtener un Tipo de Producto:✅
 Método: GET
 Endpoint: /product-types/{id}
 Descripción: Obtiene los detalles de un tipo de producto específico según su ID.
@@ -36,7 +40,7 @@ Body de la solicitud: JSON con los nuevos detalles del producto a actualizar.
 Respuesta exitosa: Código 200 (Éxito) y el JSON actualizado del tipo de producto.
 Respuesta de error: Código 404 (No encontrado) 
 
-6-Actualizar un Tipo de Producto:
+6-Actualizar un Tipo de Producto:✅
 Método: PUT
 Endpoint: /product-types/{id}
 Descripción: Actualiza los detalles de un tipo de producto existente según su ID.
@@ -50,7 +54,7 @@ Endpoint: /products
 Descripción: Obtiene los detalles de un todos los productos
 Respuesta exitosa: Código 200 (Éxito) 
 
-8-Obtener todos los Tipos de Productos:
+8-Obtener todos los Tipos de Productos:✅
 Método: GET
 Endpoint: /product-types
 Descripción: Obtiene los detalles de un todos los tipos de productos
