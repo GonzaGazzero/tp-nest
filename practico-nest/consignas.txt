@@ -60,3 +60,5 @@ Endpoint: /product-types
 Descripción: Obtiene los detalles de un todos los tipos de productos
 Respuesta exitosa: Código 200 (Éxito) 
 
+-Se deben crear al menos 4 tipos de productos y al menos 20 productos asociados:✅
+
