@@ -10,10 +10,12 @@ import {
   HttpException,
   HttpStatus,
   Query,
+  UseGuards,
 } from '@nestjs/common';
 import { ProductsService } from './products.service';
 import { DeepPartial } from 'typeorm';
 import { ProductEntity } from 'src/entities/product.entity';
+import { AuthGuard } from 'src/middlewares/auth.middleware';
 
 @Controller('products')
 export class ProductsController {
@@ -26,6 +28,7 @@ export class ProductsController {
     return await this.service.create(product);
   }
 
+  @UseGuards(new AuthGuard('list-products'))
   @Get()
   async findAll() {
     return await this.service.findAll();
